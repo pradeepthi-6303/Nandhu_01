@@ -1,0 +1,24 @@
+word wang
+
+
+
+system.out.println("enter the sentence");
+String sen = sc.nextLine();
+if(!sen.matches("[a-zA-Z]+"){
+system.out.println("invalid sentence");
+}
+String word = sem.split("//s+");
+wordcount = word.length;
+if(wordcount %2==0){
+for(int i=0;i<word.length/2;i++){
+string temp = word[i];
+word[i] = word[word.length -i-1];
+word[word.length-i-1] = temp;
+}
+system.out.println(String.join(" ",word));
+}
+else{
+for(int i=0;i<word.length;i++){
+word[i] = new StringBuilder(word[i]).reverse().toString();
+system.out.println(String.join(" ",word));
+}
